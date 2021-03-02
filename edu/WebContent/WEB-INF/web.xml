@@ -94,4 +94,14 @@
 		</taglib>
 	</jsp-config>
 
+	<servlet>
+		<servlet-name>front</servlet-name>
+		<servlet-class>com.edu.controller.FrontController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>front</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
