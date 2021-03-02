@@ -8,7 +8,7 @@
 	<!-- <servlet> <servlet-name>first</servlet-name> <servlet-class>com.edu.test.FirstServlet</servlet-class> 
 		</servlet> <servlet-mapping> <servlet-name>first</servlet-name> <url-pattern>/hello</url-pattern> 
 		</servlet-mapping> -->
-
+<!-- 
 	<servlet>
 		<servlet-name>initParam</servlet-name>
 		<servlet-class>com.edu.test.InitParamServlet</servlet-class>
@@ -69,7 +69,7 @@
 		<filter-name>flow2</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
+ -->
 	<error-page>
 		<error-code>405</error-code>
 		<location>/errorHandle</location>
@@ -86,5 +86,12 @@
 		<res-type>javax.sql.Datasource</res-type>				<!-- 사용하고자 하는 리소스의 타입 지정 -->
 		<res-auth>Container</res-auth>							<!-- 리소스에 대한 권한이 누구인지 지정 -->
 	</resource-ref>
+	
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://myTags.com</taglib-uri>		
+			<taglib-location>/WEB-INF/myTag.tld</taglib-location>
+		</taglib>
+	</jsp-config>
 
 </web-app>
